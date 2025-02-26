@@ -6,8 +6,8 @@ export default function LoginPage() {
     const errorState = {
         error: ""
     };
-    const [state, fromAction, pending] = useActionState(login, errorState);
-    
+    const [, fromAction,] = useActionState(login, errorState);
+
     return (
         <div className='flex justify-center items-center h-screen'>
             <form action={fromAction} className='space-y-5 flex flex-col'>
