@@ -3,7 +3,7 @@ import React, { Suspense } from 'react'
 // import LoadingBlogs from './_loading';
 import Link from 'next/link';
 import Image from 'next/image';
-import LoadingBlogs from './loading';
+// import LoadingBlogs from './_loading';
 
 async function getData() {
     const blogsUrl = `${process.env.NEXT_PUBLIC_API_URL!}/product?size=50`;
@@ -49,9 +49,9 @@ async function BlogList() {
 
 export default function BlogPage() {
     return (
-        <Suspense fallback={<LoadingBlogs />}>
-            <BlogList />
-        </Suspense>
+        // <Suspense fallback={<LoadingBlogs />}>
+        <BlogList />
+        // </Suspense>
     );
 }
 
